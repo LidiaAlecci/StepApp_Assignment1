@@ -243,7 +243,7 @@ class StepCounterListener implements SensorEventListener {
 
     // Calculate the number of steps from the step detector
     private void countSteps(float step) {
-        mAndroidStepCount += 1;
+        mAndroidStepCount += step;
         Log.d("Step Detector", "Count: " + String.valueOf(mAndroidStepCount));
 
     }
